@@ -4,7 +4,7 @@ pipeline {
     triggers {
         githubPush()
     }
-    
+
     stages {
         stage('Build') {
             steps {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing'
+                echo 'Testing...'
             }
         }
         stage('Deploy') {
